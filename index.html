@@ -1,0 +1,61 @@
+<html>
+<head>
+<title> aansuni.dastaan </title>
+<link rel="icon" href="feather3.jpg" type="image/jpg">
+<style>
+*{font-size:30px;}
+body{
+
+  background-image: url('shayari.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{background-color:black;color:white;width:50%;border-radius:40px;}
+.btn{background-color:black;color:white;width:30%;border-radius:40px;}
+.btn:hover{color:red;}
+h2{color:white;width:70vw;}
+h3{color:white;}
+</style>
+</head>
+<body>
+<center>
+<h1> Shayari's By Omkar </h1>
+<form onsubmit="check()">
+<input type="submit" value="Irshaad" class="btn"/>
+</form>
+<h2 id="msg"/>
+<h3> -Omkar </h3>
+	<script>
+		function check()
+		{
+			event.preventDefault();
+			let msg=document.getElementById("msg");
+			
+
+    let shayaris = [
+        "Zindagi mai kuch aapne hissab se naa ho to kabhi dukhi mat hona kahi adhoore lamhon ke kaaran aapni kimti haasi mat khona aaj gam ka aandhera hai toh kal khushiyoon ka suraj bhi chamkega inn choti mothi tanayoon ke kaaran tu appni zindagi mat khona...", 
+        "Kuch likha meri kismat mai kuch mai likhna chahunga aaksar baat ki logo ne mere baare kuch mai batana chahunga khamosh se rehte hai yeh lafz aksar kisi yaad mai bas iisi khamoshi se yeh duniyaa ki zubaan likhna chahungaa...",
+        "Peshe se hum shayar toh nahi par shayarana aandaaz jaroor rakhte hai Aur motarma kuch chupaya na karo humse apki aankhen padhkar hi aapki dil ki baat jaan lete hai...",
+        "Shayad kismaat ko manjoor nahi ki woh meri hoo fir bhi yaad har baar uusi ka naam aata hai dil jaroor toota hoga mera kuch paloon ke liye par khushi toh bas iss baat ki hai ki uuse aaj bhi mere naam se jaana jaata hai...",
+        "Dard puche hazaroon se maine naa khudse kabhi pucha hai sabko khush dekhna chahta hoon na khudka kabhi socha hai, waakif mai iss duniyaa se jo aapna matlab nikal leti hai fir bhi yeh rooh meri aanjaan hai jo saaja khudko deti hai aaj hazaroon gam mere seene mai naa kabhi chehre pe darshaya hai shayaron sa mizaz mera dard panno mai samaya hai dekhe maine har ek lamhe fir bhi naa aansoon kabhi behte hai kabhi fursat mile toh milkar puchna mujhe ke dard kisko kehte hai.."
+    ];
+
+    let index = parseInt(Math.random() * shayaris.length);
+    msg.innerHTML = shayaris[index];
+
+		}
+
+	</script>
+
+</center>
+
+</body>
+
+
+
+</html>
